@@ -84,6 +84,7 @@ function Page() {
 
       if (res.success) {
         showToast("success", res.message);
+        localStorage.setItem("token" , res.data.token)
         router.push("/");
       }
     } catch (err: any) {

@@ -1,11 +1,8 @@
 import { useAppSelector } from "@/Redux/store";
 import { Backdrop, CircularProgress } from "@mui/material";
 
-
-
-
 export default function GlobalFullPageLoader() {
-      const open = useAppSelector((state) => state.app.fullPageLoader);
+  const open = useAppSelector((state) => state.app.fullPageLoader);
     console.log("open❤️❤️ " , open)
   return (
     <Backdrop

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { signupUser } from "./authActions";
+import { loginUser, signupUser } from "./authActions";
 
 
 const authSlice = createSlice({
@@ -12,14 +12,15 @@ const authSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(signupUser.pending, (state) => {
+      .addCase(loginUser.pending, (state) => {
         state.loading = true;
       })
-      .addCase(signupUser.fulfilled, (state, action) => {
+      .addCase(loginUser.fulfilled, (state, action) => {
+        console.log("reduc state" , action)
         state.loading = false;
-        state.user = action.payload;
+        state.user = action.payload.data.user;
       })
-      .addCase(signupUser.rejected, (state, action) => {
+      .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload as string;
       });
