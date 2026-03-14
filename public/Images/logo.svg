@@ -1,0 +1,45 @@
+<svg width="420" height="300" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A3FFF"></stop>
+      <stop offset="40%" stop-color="#FF4D8D"></stop>
+      <stop offset="70%" stop-color="#FF9F43"></stop>
+      <stop offset="100%" stop-color="#3EC6FF"></stop>
+    </linearGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#6C5CE7"></stop>
+      <stop offset="100%" stop-color="#FF4D8D"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Chat bubble -->
+  <rect x="90" y="20" width="240" height="140" rx="40" fill="url(#mainGradient)"></rect>
+
+  <!-- Tail -->
+  <polygon points="160,160 200,160 170,200" fill="url(#mainGradient)"></polygon>
+
+  <!-- People icon -->
+  <circle cx="210" cy="70" r="20" fill="white"></circle>
+  <circle cx="170" cy="85" r="14" fill="white"></circle>
+  <circle cx="250" cy="85" r="14" fill="white"></circle>
+
+  <path d="M160 115 Q210 90 260 115 L260 135 L160 135 Z" fill="white"></path>
+  <path d="M140 120 Q170 100 200 120 L200 135 L140 135 Z" fill="white"></path>
+  <path d="M220 120 Q250 100 280 120 L280 135 L220 135 Z" fill="white"></path>
+
+  <!-- Decorative dots -->
+  <circle cx="340" cy="40" r="8" fill="#FF9F43"></circle>
+  <circle cx="360" cy="55" r="8" fill="#FF4D8D"></circle>
+  <circle cx="345" cy="75" r="8" fill="#3EC6FF"></circle>
+  <circle cx="325" cy="60" r="8" fill="#7A3FFF"></circle>
+
+  <!-- Text -->
+  <text x="210" y="260" text-anchor="middle" font-size="48" font-family="Poppins, sans-serif" font-weight="600" fill="url(#textGradient)">
+    Connectly
+  </text>
+
+</svg>
