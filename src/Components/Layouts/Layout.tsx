@@ -10,7 +10,7 @@ function Layout({children}: {children : React.ReactNode}) {
   const pathname = usePathname();
   console.log("pathname", pathname);
   const publicRoutes = ["/", "/login", "/signup"];
-  const privateLayout = ["/", "/posts"];
+  const privateLayout = ["/", "/settings" , "/profile" , "/messages"];
 
   if (privateLayout.includes(pathname)) {
     return <PrivateLayout>{children}</PrivateLayout>
